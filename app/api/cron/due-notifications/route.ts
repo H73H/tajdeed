@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import { addDays, differenceInCalendarDays } from 'date-fns'
-import { Resend } from '@resend/node'
+// Use the official Resend Node.js SDK published as the "resend" package
+import { Resend } from 'resend'
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
