@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0e0f12;
+  --fg: #e8e8ea;
+  --muted: #9da3ae;
+  --brand: #39c5bb;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+}
+a { color: var(--brand); }
+input, select, textarea {
+  background: #16181d;
+  border: 1px solid #23262d;
+  color: var(--fg);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.btn {
+  background: var(--brand);
+  color: #07110f;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.card {
+  background: #121419;
+  border: 1px solid #1f232b;
+  border-radius: 14px;
+  padding: 16px;
+}
